@@ -17,7 +17,7 @@ function checkGuess() {
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
-    lastResult.textContent = 'Congratulations!! You Got It';
+    lastResult.textContent = 'You did it!';
     lastResult.style.backgroundColor = '#42d7bb';
     lowOrHi.textContent = '';
     setGameOver();
