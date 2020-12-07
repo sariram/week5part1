@@ -1,63 +1,61 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 1</title>
+  <title>Sarikka's Game</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+</head>
 
-  <body class="text-center">
+<body class="text-center">
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Week 5, Part 1</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-          </nav>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Week 5, Part 1: Building a Game</h3>
+      </div>
+    </header>
+
+    <main>
+
+      <h1 class="cover-heading">Let's Play</h1>
+
+      <p>I have chosen a random number between 1 and 50. Guess it before the waves come crashing down! You have 10 guesses & I will let you know if it's too high or too low. Sink or swim.</p>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="guessField">Enter your guess</label>
+          <input type="text" class="form-control guessField" id="guessField" aria-describedby="guessField" placeholder="Type your guess">
         </div>
-      </header>
+        <input type="submit" value="Submit" class="btn btn-primary guessSubmit">
+      </div>
 
-      <main role="main" class="inner cover">
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
 
-        <h1 class="cover-heading">Number guessing game</h1>
+    </main>
 
-        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
+  </div>
 
-        <div class="form">
-          <div class="form-group">
-            <label for="guessField">Enter a guess:</label>
-            <input type="text" class="form-control guessField" id="guessField" aria-describedby="emailHelp" placeholder="Enter a guess">
-          </div>
-          <input type="submit" value="Submit guess" class="btn btn-primary guessSubmit">
-        </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 
-        <div class="resultParas">
-          <p class="guesses"></p>
-          <p class="lastResult"></p>
-          <p class="lowOrHi"></p>
-        </div>
-
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div>
-
-	</body>
+</body>
 
 </html>
